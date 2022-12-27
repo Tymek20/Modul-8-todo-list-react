@@ -1,0 +1,27 @@
+.button {
+    padding-left: 10px;
+}
+
+.button__hide {
+    border: none;
+    background: transparent;
+    font-size: large;
+    cursor: grab;
+    transition: 0.5s;
+}
+
+.buttons__hide:hover {
+    background: rgb(243, 245, 245);
+}
+
+.button__markDone {
+    border: none;
+    background: transparent;
+    font-size: large;
+    cursor: grab;
+    transition: 0.5s;
+}
+
+.button__markDone:hover {
+    background: rgb(243, 245, 245);
+}

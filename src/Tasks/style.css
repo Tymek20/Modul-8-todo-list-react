@@ -1,0 +1,77 @@
+
+.list__main {
+    padding: 10px 30px;
+}
+
+.list__tasks {
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    padding: 10px 10px;
+    max-width: 100%;
+    grid-template-areas:
+        "bt tx re";
+    align-items: center;
+    border-bottom: 1px solid black
+}
+
+.list__tasks--lineThrough {
+    text-decoration: line-through;
+}
+
+.list__removeButton {
+    height: 40px;
+    width: 40px;
+    border: none;
+    background-color: hsl(0, 94%, 38%);
+    color: white;
+    align-self: center;
+    justify-self: center;
+    cursor: pointer;
+    font-size: x-large;
+    transition: 2s;
+}
+
+.list__removeButton:hover {
+    background-color: hsl(0, 92%, 47%);
+}
+
+.list__removeButton:active {
+    background-color: hsl(0, 100%, 50%);
+}
+
+.list__doneButton {
+    height: 40px;
+    width: 40px;
+    border: none;
+    background-color: hsl(111deg 67% 56%);
+    color: white;
+    align-self: center;
+    justify-self: center;
+    cursor: pointer;
+    font-size: x-large;
+    transition: 2s;
+}
+
+.list__doneButton:hover {
+    background-color: rgb(24, 128, 5);
+}
+
+.list__buttonAdditional {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list__item--hide {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .list__buttonAdditional {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .list__header {
+        grid-template-columns: 1fr;
+    }
+}
