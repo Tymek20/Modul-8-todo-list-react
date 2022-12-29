@@ -1,8 +1,40 @@
-#Lista zadań 
+# To do List
 
-opis projektu 
+# Tomasz Szkudlarek 
 
-# Getting Started with Create React App
+## One of the first page on github by REACT.js 
+
+### This is not an easy to do page about the to do list.
+https://tymek20.github.io/Modul-8-todo-list-react/
+
+## 
+It doesn't work yet, but it will work like the gif below
+
+![Alt Text](https://github.com/Tymek20/modul-7-zadanie/blob/master/gif/modul%207%20zadanie%20domowe.gif?raw=true)
+
+#### Here is the rest of my works:
+
+- [Currency Converter](https://tymek20.github.io/Currency-converter/)
+
+- [Refactoring BEM](https://tymek20.github.io/BEM-refactoring/)
+
+- [Zadanie domowe moduł 7](https://tymek20.github.io/modul-7-zadanie/)
+#### Tech we to use: 
+- HTML
+- JAVASCRIPT
+- CSS
+- BEM
+- Markdown
+- Flex
+- GRID
+- Immutability
+- React
+
+and a photo below of me with my son
+
+![Myfoto](https://github.com/tymek20/Currency-converter/blob/main/images/myphoto.jpg?raw=true)
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
