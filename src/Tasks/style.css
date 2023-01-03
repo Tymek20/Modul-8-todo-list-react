@@ -1,4 +1,3 @@
-
 .list__main {
     padding: 10px 30px;
 }
@@ -73,5 +72,9 @@
 
     .list__header {
         grid-template-columns: 1fr;
+    }
+
+    .list__main {
+        padding: 10px 0px;
     }
 }
