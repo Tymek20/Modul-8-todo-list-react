@@ -42,7 +42,7 @@
     height: 40px;
     width: 40px;
     border: none;
-    background-color: hsl(111deg 67% 56%);
+    background-color: rgb(24, 128, 5);
     color: white;
     align-self: center;
     justify-self: center;
@@ -52,7 +52,7 @@
 }
 
 .list__doneButton:hover {
-    background-color: rgb(24, 128, 5);
+    background-color: hsl(111, 92%, 36%);
 }
 
 .list__buttonAdditional {

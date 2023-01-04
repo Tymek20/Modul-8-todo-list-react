@@ -1,34 +1,45 @@
 .button {
     padding: 0 10px;
+
 }
 
 .button__hide {
     border: none;
     background: transparent;
     font-size: large;
-    cursor: grab;
+    cursor: pointer;
     transition: 0.5s;
+    color: hwb(0 17% 50%);
 }
 
-.buttons__hide:hover {
-    background: rgb(243, 245, 245);
+.button__hide:hover {
+    color: hwb(0 17% 30%);
 }
 
 .button__markDone {
     border: none;
     background: transparent;
     font-size: large;
-    cursor: grab;
+    cursor: pointer;
     transition: 0.5s;
+    color: hwb(0 17% 50%);
 }
 
 .button__markDone:hover {
-    background: rgb(243, 245, 245);
+    color: hwb(0 17% 30%);
 }
 
 @media (max-width: 767px) {
     .button {
         display: grid;
         grid-template-columns: 1fr;
+    }
+
+    .button__markDone {
+        padding-top: 20px;
+    }
+
+    .button__hide {
+        padding-top: 20px;
     }
 }
