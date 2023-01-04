@@ -5,7 +5,7 @@
 ## One of the first page on github by REACT.js 
 
 ### This is not an easy to do page about the to do list.
-https://tymek20.github.io/Modul-8-todo-list-react/
+[To do List - moduł 8 zadanie domowe](https://tymek20.github.io/Modul-8-todo-list-react/)
 
 ## 
 It doesn't work yet, but it will work like the gif below
