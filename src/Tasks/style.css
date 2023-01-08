@@ -10,7 +10,7 @@
     grid-template-areas:
         "bt tx re";
     align-items: center;
-    border-bottom: 1px solid black
+    border-bottom: 1px solid #dbc7c7;
 }
 
 .list__tasks--lineThrough {
@@ -18,8 +18,8 @@
 }
 
 .list__removeButton {
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     border: none;
     background-color: hsl(0, 94%, 38%);
     color: white;
@@ -39,8 +39,8 @@
 }
 
 .list__doneButton {
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     border: none;
     background-color: rgb(24, 128, 5);
     color: white;
