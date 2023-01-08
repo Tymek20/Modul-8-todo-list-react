@@ -9,7 +9,7 @@
 
 ## 
 
-![Alt Text](https://github.com/Tymek20/modul-7-zadanie/blob/master/gif/modul%207%20zadanie%20domowe.gif?raw=true)
+![Alt Text](https://github.com/Tymek20/Modul-8-todo-list-react/blob/main/gif/modul%208%20react.gif?raw=true)
 
 #### Here is the rest of my works:
 
