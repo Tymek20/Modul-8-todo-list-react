@@ -8,11 +8,15 @@
     font-size: large;
     cursor: pointer;
     transition: 0.5s;
-    color: hwb(0 17% 50%);
+    color: teal
 }
 
 .button__buttons:hover {
     color: hwb(0 17% 30%);
+}
+
+.button__buttons:disabled {
+    color: #ccc
 }
 
 @media (max-width: 767px) {
