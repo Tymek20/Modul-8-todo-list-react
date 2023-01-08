@@ -8,7 +8,6 @@
 [To do List - moduł 8 zadanie domowe](https://tymek20.github.io/Modul-8-todo-list-react/)
 
 ## 
-It doesn't work yet, but it will work like the gif below
 
 ![Alt Text](https://github.com/Tymek20/modul-7-zadanie/blob/master/gif/modul%207%20zadanie%20domowe.gif?raw=true)
 
