@@ -1,12 +1,12 @@
-.tasks {
+.sections {
     background-color: white;
 }
 
-.tasks__title {
+.sections__title {
     font-weight: 700;
 }
 
-.tasks__header {
+.sections__header {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -17,17 +17,17 @@
     padding: 10px;
 }
 
-.tasks__paragraph {
+.sections__paragraph {
     padding: 10;
 }
 
 @media (max-width: 767px) {
-    .tasks__title {
+    .sections__title {
         align-self: flex-start;
         padding-left: 10px;
     }
 
-    .tasks__header {
+    .sections__header {
         flex-direction: column;
         padding-left: 0px;
     }

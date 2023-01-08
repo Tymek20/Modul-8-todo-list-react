@@ -1,8 +1,8 @@
-.list__main {
+.tasks {
     padding: 10px 30px;
 }
 
-.list__tasks {
+.tasks__tasks {
     display: grid;
     grid-template-columns: 50px 1fr 50px;
     padding: 10px 10px;
@@ -13,11 +13,11 @@
     border-bottom: 1px solid #dbc7c7;
 }
 
-.list__tasks--lineThrough {
+.tasks__tasks--lineThrough {
     text-decoration: line-through;
 }
 
-.list__removeButton {
+.tasks__removeButton {
     height: 30px;
     width: 30px;
     border: none;
@@ -30,15 +30,15 @@
     transition: 2s;
 }
 
-.list__removeButton:hover {
+.tasks__removeButton:hover {
     background-color: hsl(0, 92%, 47%);
 }
 
-.list__removeButton:active {
+.tasks__removeButton:active {
     background-color: hsl(0, 100%, 50%);
 }
 
-.list__doneButton {
+.tasks__doneButton {
     height: 30px;
     width: 30px;
     border: none;
@@ -51,30 +51,30 @@
     transition: 2s;
 }
 
-.list__doneButton:hover {
+.tasks__doneButton:hover {
     background-color: hsl(111, 92%, 36%);
 }
 
-.list__buttonAdditional {
+.tasks__buttonAdditional {
     display: flex;
     flex-wrap: wrap;
 }
 
-.list__item--hide {
+.tasks__item--hide {
     display: none;
 }
 
 @media (max-width: 767px) {
-    .list__buttonAdditional {
+    .tasks__buttonAdditional {
         display: grid;
         grid-template-columns: 1fr;
     }
 
-    .list__header {
+    .tasks__header {
         grid-template-columns: 1fr;
     }
 
-    .list__main {
+    .tasks__main {
         padding: 10px 0px;
     }
 }
