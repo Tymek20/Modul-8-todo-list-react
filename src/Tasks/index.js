@@ -1,8 +1,6 @@
 import "./style.css";
 
-const usun = () => console.log("Kliknięto w kosz!");
-
-const Tasks = ({ tasks, hideDone }) => (
+const Tasks = ({ tasks, hideDone, removeTask }) => (
     <ul className="tasks">
         {tasks.map(task => (
             <li
@@ -16,7 +14,7 @@ const Tasks = ({ tasks, hideDone }) => (
                 </div>
                 <button
                     className="tasks__removeButton"
-                    onClick={usun}
+                    onClick={() => removeTask(task.id)}
                 >
                     🗑
                 </button>
