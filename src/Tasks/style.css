@@ -74,7 +74,7 @@
         grid-template-columns: 1fr;
     }
 
-    .tasks__main {
+    .tasks {
         padding: 10px 0px;
     }
 }
