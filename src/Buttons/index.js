@@ -1,12 +1,10 @@
 import "./style.css"
 
-const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => {
-  if (tasks.lenght === 0) {
-    return null;
-  }
-
-  return (
+const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone, }) => (
+  
     <div className="button">
+      {tasks.length > 0 && (
+        <>
       <button
         onClick={toggleHideDone}
         className="button__buttons"
@@ -21,8 +19,10 @@ const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => {
       >
         Ukończ wszystkie
       </button>
+      </>
+      )}
     </div>
-  )
-};
+);
+
 
 export default Buttons;
