@@ -27,10 +27,9 @@ function App() {
       if (task.id === id) {
         return { ...task, done: !task.done };
       }
-
       return task;
     }));
-  }
+  };
 
   const setAllDone = () => {
     setTasks(tasks => tasks.map(task => ({
@@ -73,6 +72,7 @@ function App() {
           toggleTaskDone={toggleTaskDone}
         />}
         extraHeaderContent={
+
           <Buttons
             tasks={tasks}
             hideDone={hideDone}
