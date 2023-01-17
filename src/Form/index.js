@@ -17,6 +17,7 @@ const Form = ({ addNewTask }) => {
         className="form__newTask"
         placeholder="Co jest do zrobienia?"
         onChange={({ target }) => setNewTaskContent(target.value)}
+        maxLength="60"
       />
       <button
         className="form__addButton"

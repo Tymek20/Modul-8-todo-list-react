@@ -48,7 +48,7 @@ function App() {
             done: false,
             id: tasks.length === 0 ? 1 : tasks[tasks.length - 1].id + 1,
           },
-        ]))
+        ]));
     }
   };
 
@@ -65,14 +65,15 @@ function App() {
 
       <Section
         title="Lista zadań"
-        body={<Tasks
-          tasks={tasks}
-          hideDone={hideDone}
-          removeTask={removeTask}
-          toggleTaskDone={toggleTaskDone}
-        />}
-        extraHeaderContent={
+        body={
+          <Tasks
+            tasks={tasks}
+            hideDone={hideDone}
+            removeTask={removeTask}
+            toggleTaskDone={toggleTaskDone}
+          />}
 
+        extraHeaderContent={
           <Buttons
             tasks={tasks}
             hideDone={hideDone}
@@ -81,9 +82,11 @@ function App() {
           />}
       />
 
-      <Footer title="Tomasz Szkudlarek Made This in React app" />
+      <Footer
+        title="Tomasz Szkudlarek Made This in React app"
+      />
     </Container>
   );
-}
+};
 
 export default App;
