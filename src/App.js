@@ -5,14 +5,18 @@ import Section from "./Section";
 import Header from "./Header";
 import Footer from "./Footer";
 import Container from "./Container";
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function App() {
   const [hideDone, setHideDone] = useState(false);
-  const [tasks, setTasks] = useState([
-    { id: 1, content: "Przejść na Reacta", done: false },
-    { id: 2, content: "Szkolić się mimo wszystko!", done: true },
-  ]);
+  const [tasks, setTasks] = useState(() => {
+    const localData = localStorage.getItem('tasks');
+    return localData ? JSON.parse(localData) : [];
+  });
+
+  useEffect(() => {
+    localStorage.setItem('tasks', JSON.stringify(tasks))
+  }, [tasks])
 
   const toggleHideDone = () => {
     setHideDone(hideDone => !hideDone)
