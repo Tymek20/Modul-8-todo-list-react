@@ -3,50 +3,9 @@
     background-color: white;
 }
 
-.form__input {
-    background-color: white;
-    display: flex;
-    padding: 10px;
-}
 
-.form__newTask {
-    background-color: rgb(255, 255, 255);
-    border: 1px solid lightgray;
-    cursor: text;
-    flex-basis: 78%;
-    padding: 10px;
-}
 
 .form__task {
     font-size: x-large;
     margin-left: 20px;
-}
-
-.form__addButton {
-    margin-left: 20px;
-    cursor: pointer;
-    border: none;
-    background-color: rgb(62 92 106);
-    color: rgb(254, 255, 255);
-    transition: 0.5s;
-}
-
-.form__addButton:hover {
-    transform: scale(1.10);
-}
-
-@media (max-width: 767px) {
-    .form__input {
-        flex-wrap: wrap;
-    }
-
-    .form__newTask {
-        flex-basis: 100%;
-    }
-
-    .form__addButton {
-        flex-basis: 100%;
-        margin: 10px 0;
-        padding: 10px;
-    }
 }
