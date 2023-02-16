@@ -7,7 +7,7 @@ import Footer from "./Container/Footer";
 import Container from "./Container";
 import { useEffect, useState } from 'react';
 
-function App() {
+export function App() {
   const [hideDone, setHideDone] = useState(false);
   const [tasks, setTasks] = useState(
     JSON.parse(localStorage.getItem('tasks')) || []);
