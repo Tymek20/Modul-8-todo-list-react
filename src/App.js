@@ -9,10 +9,9 @@ import { useEffect, useState } from 'react';
 
 function App() {
   const [hideDone, setHideDone] = useState(false);
-  const [tasks, setTasks] = useState(() => {
-    const localData = localStorage.getItem('tasks');
-    return localData ? JSON.parse(localData) : [];
-  });
+  const [tasks, setTasks] = useState(
+    JSON.parse(localStorage.getItem('tasks')) || []);
+
 
   useEffect(() => {
     localStorage.setItem('tasks', JSON.stringify(tasks))
