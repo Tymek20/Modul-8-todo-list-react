@@ -28,6 +28,7 @@
 - GRID
 - Immutability
 - React
+- Styled Components
 
 and a photo below of me with my son
 
