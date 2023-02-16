@@ -1,9 +1,9 @@
-import Buttons from "./Buttons";
-import Form from "./Form";
-import Tasks from "./Tasks";
-import Section from "./Section";
-import Header from "./Header";
-import Footer from "./Footer";
+import Buttons from "./Container/Section/Buttons";
+import Form from "./Container/Section/Form";
+import Tasks from "./Container/Section/Tasks";
+import Section from "./Container/Section";
+import Header from "./Container/Header";
+import Footer from "./Container/Footer";
 import Container from "./Container";
 import { useEffect, useState } from 'react';
 
