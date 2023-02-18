@@ -10,7 +10,7 @@ export const StyledHeader = styled.header`
     align-items: center;
     margin-top: 5px;
     font-size: x-large;
-    border-bottom: 1px solid hsl(0, 21%, 90%);
+    border-bottom: 1px solid ${({ theme }) => theme.colors.borderColor};;
     justify-content: space-between;
     padding: 10px;  
     

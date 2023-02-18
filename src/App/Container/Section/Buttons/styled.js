@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const AdditionalButtonSection = styled.div`
     padding: 0 10px;
 
@@ -15,8 +16,8 @@ export const Button = styled.button`
     font-size: large;
     cursor: pointer;
     transition: 0.5s;
-    color: teal;
-    padding: 0 10px;
+    color:  teal
+    padding 0 10px;
 
     &:hover {
     color: hwb(0 17% 30%);
@@ -29,4 +30,4 @@ export const Button = styled.button`
     @media (max-width: 767px){
         padding-top: 20px;
     }
-`;
+`

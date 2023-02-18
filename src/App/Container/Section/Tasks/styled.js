@@ -45,7 +45,7 @@ export const StyledList = styled.li`
     grid-template-areas:
         "bt tx re";
     align-items: center;
-    border-bottom: 1px solid #dbc7c7;
+    border-bottom: 1px solid ${({ theme }) => theme.colors.borderColor};;
 
     ${({ hidden }) => hidden && css`
     display: none;

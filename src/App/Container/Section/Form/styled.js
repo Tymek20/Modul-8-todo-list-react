@@ -1,5 +1,13 @@
 import styled from "styled-components";
 
+
+export const theme = {
+    colors: {
+        primaryColor: "rgb(254, 255, 255)",
+        borderColor: "lightgray",
+    }
+};
+
 export const FormInput = styled.form` 
     background-color: white;
     display: flex;
@@ -12,7 +20,7 @@ export const FormInput = styled.form`
 
 export const NewTask = styled.input`
     background-color: rgb(255, 255, 255);
-    border: 1px solid lightgray;
+    border: 1px solid ${({ theme }) => theme.colors.borderColor};
     cursor: text;
     flex-basis: 78%;
     padding: 10px;
@@ -27,7 +35,7 @@ export const AddButton = styled.button`
     cursor: pointer;
     border: none;
     background-color: rgb(62 92 106);
-    color: rgb(254, 255, 255);
+    color:  ${({ theme }) => theme.colors.primaryColor};
     transition: 0.5s;
 
     &:hover {

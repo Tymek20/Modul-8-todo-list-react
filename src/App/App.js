@@ -7,6 +7,8 @@ import Footer from "./Container/Footer";
 import Container from "./Container";
 import { useState } from 'react';
 import { useTasks } from "./useTasks";
+import { ThemeProvider } from "styled-components";
+import { theme } from '../App/Container/Section/Form/styled';
 
 export function App() {
 
@@ -25,39 +27,41 @@ export function App() {
   ] = useTasks();
 
   return (
-    <Container>
-      <Header title="Lista zadań" />
+    <ThemeProvider theme={theme}>
+      <Container>
+        <Header title="Lista zadań" />
 
-      <Section
-        title="Dodaj nowe zadanie"
-        body={<Form
-          addNewTask={addNewTask}
-        />}
-      />
-
-      <Section
-        title="Lista zadań"
-        body={
-          <Tasks
-            tasks={tasks}
-            hideDone={hideDone}
-            removeTask={removeTask}
-            toggleTaskDone={toggleTaskDone}
+        <Section
+          title="Dodaj nowe zadanie"
+          body={<Form
+            addNewTask={addNewTask}
           />}
+        />
 
-        extraHeaderContent={
-          <Buttons
-            tasks={tasks}
-            hideDone={hideDone}
-            toggleHideDone={toggleHideDone}
-            setAllDone={setAllDone}
-          />}
-      />
+        <Section
+          title="Lista zadań"
+          body={
+            <Tasks
+              tasks={tasks}
+              hideDone={hideDone}
+              removeTask={removeTask}
+              toggleTaskDone={toggleTaskDone}
+            />}
 
-      <Footer
-        title="Tomasz Szkudlarek Made This in React app"
-      />
-    </Container>
+          extraHeaderContent={
+            <Buttons
+              tasks={tasks}
+              hideDone={hideDone}
+              toggleHideDone={toggleHideDone}
+              setAllDone={setAllDone}
+            />}
+        />
+
+        <Footer
+          title="Tomasz Szkudlarek Made This in React app"
+        />
+      </Container>
+    </ThemeProvider>
   );
 };
 
