@@ -1,4 +1,3 @@
-import "./style.css";
 import { useRef, useState } from 'react';
 import { FormInput, NewTask, AddButton } from "./styled";
 
