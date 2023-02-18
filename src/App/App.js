@@ -5,22 +5,18 @@ import Section from "./Container/Section";
 import Header from "./Container/Header";
 import Footer from "./Container/Footer";
 import Container from "./Container";
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
+import { useLocalStorageState } from "./useLocalStorageState";
 
 export function App() {
+
   const [hideDone, setHideDone] = useState(false);
-  const [tasks, setTasks] = useState(
-    JSON.parse(localStorage.getItem('tasks')) || []);
-
-
-  useEffect(() => {
-    localStorage.setItem('tasks', JSON.stringify(tasks))
-  }, [tasks])
-
   const toggleHideDone = () => {
     setHideDone(hideDone => !hideDone)
   };
-
+  
+  const [tasks, setTasks] = useLocalStorageState("tasks", []);
+  
   const removeTask = (id) => {
     setTasks(tasks => tasks.filter(task => task.id !== id));
   };
