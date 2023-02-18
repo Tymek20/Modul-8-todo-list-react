@@ -2,9 +2,9 @@ import { StyledSection, StyledHeader, StyledTitle, StyledParagraph } from "./sty
 
 const Section = ({ title, body, extraHeaderContent }) => (
   <StyledSection>
-    
+
     <StyledHeader>
-      
+
       <StyledTitle>{title}</StyledTitle>
       {extraHeaderContent}
     </StyledHeader>

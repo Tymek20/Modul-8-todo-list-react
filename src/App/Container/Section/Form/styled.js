@@ -1,13 +1,5 @@
 import styled from "styled-components";
 
-
-export const theme = {
-    colors: {
-        primaryColor: "rgb(254, 255, 255)",
-        borderColor: "lightgray",
-    }
-};
-
 export const FormInput = styled.form` 
     background-color: white;
     display: flex;

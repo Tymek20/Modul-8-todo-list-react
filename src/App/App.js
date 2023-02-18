@@ -8,7 +8,13 @@ import Container from "./Container";
 import { useState } from 'react';
 import { useTasks } from "./useTasks";
 import { ThemeProvider } from "styled-components";
-import { theme } from '../App/Container/Section/Form/styled';
+
+const theme = {
+  colors: {
+    primaryColor: "rgb(254, 255, 255)",
+    borderColor: "lightgray",
+  }
+};
 
 export function App() {
 
