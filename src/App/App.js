@@ -5,21 +5,16 @@ import Section from "./Container/Section";
 import Header from "./Container/Header";
 import Footer from "./Container/Footer";
 import Container from "./Container";
-import { useState } from 'react';
 import { useTasks } from "./useTasks";
 import { ThemeProvider } from "styled-components";
 import { theme } from "./theme";
 
 export function App() {
 
-  const [hideDone, setHideDone] = useState(false);
-
-  const toggleHideDone = () => {
-    setHideDone(hideDone => !hideDone)
-  };
-
   const [
     tasks,
+    hideDone,
+    toggleHideDone,
     addNewTask,
     setAllDone,
     toggleTaskDone,

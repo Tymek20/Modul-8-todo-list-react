@@ -1,4 +1,5 @@
 import { useLocalStorageState } from "./useLocalStorageState";
+import { useState } from "react";
 
 export const useTasks = () => {
 
@@ -38,5 +39,11 @@ export const useTasks = () => {
         }
     };
 
-    return [tasks, addNewTask, setAllDone, toggleTaskDone, removeTask];
+    const [hideDone, setHideDone] = useState(false);
+
+    const toggleHideDone = () => {
+      setHideDone(hideDone => !hideDone)
+    };
+
+    return [tasks,hideDone, toggleHideDone, addNewTask, setAllDone, toggleTaskDone, removeTask];
 };
