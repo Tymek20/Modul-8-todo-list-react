@@ -16,6 +16,7 @@ export const NewTask = styled.input`
     cursor: text;
     flex-basis: 78%;
     padding: 10px;
+    line-height: normal;
 
     @media (max-width: ${({theme}) => theme.breakpoint.mobile}px) {
         flex-basis: 100%;
