@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 export const NewTasks = styled.ul`
     padding: 10px 30px;
 
-    @media (max-width: 767px){
+    @media (max-width: ${({theme}) => theme.breakpoint.mobile}px){
         padding: 10px 0px;
     }
 `;
@@ -12,8 +12,8 @@ export const DoneButton = styled.button`
     height: 30px;
     width: 30px;
     border: none;
-    background-color: rgb(24, 128, 5);
-    color: white;
+    background-color: ${({ theme }) => theme.colors.japaneseLaurel};
+    color: ${({ theme }) => theme.colors.white};
     align-self: center;
     justify-self: center;
     cursor: pointer;
@@ -21,19 +21,19 @@ export const DoneButton = styled.button`
     transition: 2s;
 
     &:hover{
-        background-color: hsl(111, 92%, 36%);
+        filter: brightness(130%)
     }
 `;
 
 export const RemoveButton = styled(DoneButton)`
-    background-color: hsl(0, 94%, 38%);
+    background-color: ${({ theme }) => theme.colors.milanoRed};
  
     &:hover {
-    background-color: hsl(0, 92%, 47%);
+        background-color: ${({ theme }) => theme.colors.red};
     }
 
     &:active {
-    background-color: hsl(0, 100%, 50%);
+        background-color: ${({theme}) => theme.colors.lightRed};
     }
 `;
 
@@ -53,7 +53,6 @@ export const StyledList = styled.li`
 `;
 
 export const StyledTask = styled.div`
-    
     ${({ lineThrough }) => lineThrough && css`
         text-decoration: line-through;
     `};

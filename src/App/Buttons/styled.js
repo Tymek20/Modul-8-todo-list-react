@@ -16,18 +16,18 @@ export const Button = styled.button`
     font-size: large;
     cursor: pointer;
     transition: 0.5s;
-    color:  teal
-    padding 0 10px;
+    color: ${({theme}) => theme.colors.teal};
+    padding: 0 10px;
 
     &:hover {
-    color: hwb(0 17% 30%);
+    color: ${({theme}) => theme.colors.tallPoppy};
     }
 
     &:disabled {
-    color: #ccc
+    color: ${({theme}) => theme.colors.silver};    
     }
 
-    @media (max-width: 767px){
+    @media (max-width: ${({theme}) => theme.breakpoint.mobile}px){
         padding-top: 20px;
     }
 `

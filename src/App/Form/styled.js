@@ -1,23 +1,23 @@
 import styled from "styled-components";
 
 export const FormInput = styled.form` 
-    background-color: white;
+    background-color: ${({ theme }) => theme.colors.white};
     display: flex;
     padding: 10px;
 
-    @media (max-width: 767px) {
+    @media (max-width: ${({theme}) => theme.breakpoint.mobile}px) {
         flex-wrap: wrap;
     }
 `;
 
 export const NewTask = styled.input`
-    background-color: rgb(255, 255, 255);
+    background-color: ${({ theme }) => theme.colors.white};
     border: 1px solid ${({ theme }) => theme.colors.borderColor};
     cursor: text;
     flex-basis: 78%;
     padding: 10px;
 
-    @media (max-width: 767px) {
+    @media (max-width: ${({theme}) => theme.breakpoint.mobile}px) {
         flex-basis: 100%;
     }
 `;
@@ -26,7 +26,7 @@ export const AddButton = styled.button`
     margin-left: 20px;
     cursor: pointer;
     border: none;
-    background-color: rgb(62 92 106);
+    background-color: ${({ theme }) => theme.colors.fiord};
     color:  ${({ theme }) => theme.colors.primaryColor};
     transition: 0.5s;
 
@@ -34,7 +34,7 @@ export const AddButton = styled.button`
         transform: scale(1.10);
     }
 
-@media (max-width: 767px){
+@media (max-width: ${({theme}) => theme.breakpoint.mobile}px){
     flex-basis: 100%;
     margin: 10px 0;
     padding: 10px;

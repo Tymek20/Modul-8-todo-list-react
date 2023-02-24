@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledSection = styled.section`
-    background-color: white;
+    background-color: ${({ theme }) => theme.colors.white};
 `;
 
 export const StyledHeader = styled.header`
@@ -10,11 +10,11 @@ export const StyledHeader = styled.header`
     align-items: center;
     margin-top: 5px;
     font-size: x-large;
-    border-bottom: 1px solid ${({ theme }) => theme.colors.borderColor};;
+    border-bottom: 1px solid ${({ theme }) => theme.colors.borderColor};
     justify-content: space-between;
     padding: 10px;  
     
-    @media (max-width: 767px){
+    @media (max-width: ${({theme}) => theme.breakpoint.mobile}px){
         flex-direction: column;
         padding-left: 0px;
     }
@@ -23,7 +23,7 @@ export const StyledHeader = styled.header`
 export const StyledTitle = styled.div`
     font-weight: 700;
 
-    @media (max-width: 767px){
+    @media (max-width: ${({theme}) => theme.breakpoint.mobile}px){
         align-self: flex-start;
         padding-left: 10px;
         }
