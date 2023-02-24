@@ -12,7 +12,7 @@ export const FormInput = styled.form`
 
 export const NewTask = styled.input`
     background-color: ${({ theme }) => theme.colors.white};
-    border: 1px solid ${({ theme }) => theme.colors.borderColor};
+    border: 1px solid ${({ theme }) => theme.colors.alto};
     cursor: text;
     flex-basis: 78%;
     padding: 10px;
@@ -27,7 +27,7 @@ export const AddButton = styled.button`
     cursor: pointer;
     border: none;
     background-color: ${({ theme }) => theme.colors.fiord};
-    color:  ${({ theme }) => theme.colors.primaryColor};
+    color:  ${({ theme }) => theme.colors.twilightBlue};
     transition: 0.5s;
 
     &:hover {

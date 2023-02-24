@@ -1,7 +1,7 @@
 export const theme = {
     colors: {
-        primaryColor: "rgb(254, 255, 255)",
-        borderColor: "lightgray",
+        twilightBlue: "#FEFFFF",
+        alto: "#d3d3d3",
         ebb: "#ebe0e0",
         teal: "#008080",
         white: "#ffffff",
